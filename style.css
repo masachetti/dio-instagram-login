@@ -1,0 +1,85 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.main-content{
+    width: auto;
+    padding: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.phone-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-image img{
+    width: 100%;
+}
+
+.login-area{
+    width: 25%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login{
+    padding: 20px 40px;
+    border: 1px solid #dbdbdb;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.login img{
+    width: 80%;
+    margin: 40px 0px;
+}
+
+.login-text-input{
+    width: 100%;
+    margin: 3px 0px;
+    padding: 0;
+}
+
+.login-button{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 0;
+}
+
+.facebook-login a{
+    color: #385185;
+}
+
+.signup{
+    padding: 20px 40px;
+    border: 1px solid #dbdbdb;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.signup a{
+    margin-left: 4px;
+    color: #0095f7;
+}
+
+.download{
+    display: flex;
+    justify-content: center;
+}
+
+.download img{
+    width: 15%;
+    margin: 0 5px;
+}
