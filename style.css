@@ -1,14 +1,21 @@
-a{
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
     color: black;
 }
 
 .main-content{
+    height: 100vh;
     width: auto;
-    padding: 20px 0px;
+    padding: 8rem 0px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    background-color: #fafafa;
 }
 
 .phone{
@@ -22,13 +29,12 @@ a{
     right: 58px;
     top: 25px;
     color: #999;
-    font-size: 12px;
 }
 
 .login-area{
-    width: 20%;
+    /* width: 18%; */
+    width: 25rem;
     margin-top: 20px;
-    margin-left: 30px;
     margin-right: 60px;
     display: flex;
     flex-direction: column;
@@ -43,21 +49,24 @@ a{
     flex-direction: column;
     display: flex;
     align-items: center;
+    background-color: white;
 }
 
 .login img{
-    width: 60%;
+    width: 70%;
     margin: 30px 0px;
 }
 
 .login-text-input{
-    width: 97%;
-    height: 35px;
+    background-color: #fafafa;
+    width: 100%;
+    height: 38px;
     margin: 3px 0px;
     padding: 0;
     padding-left: 8px;
     border-radius: 2px;
     border: 1px solid #dbdbdb;
+    font-size: 12px;
 }
 
 .login-text-input:focus {
@@ -82,24 +91,28 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 10px 0px;
 }
 
 .form-division p{
     font-size: 12px;
+    color: #8e8e8e;
 }
 
 .division-line{
     height: 50%;
-    width: 35%;
+    width: 40%;
     border-top: 1px solid #dbdbdb;
 }
 
 .facebook-login{
-    margin: 10px;
+    margin: 15px;
 }
 
 .facebook-login a{
     color: #385185;
+    font-weight: bold;
+    font-size: 13px;
 }
 
 .facebook-icon{
@@ -121,27 +134,66 @@ a{
 
 .signup{
     width: 100%;
-    padding: 5px 40px;
+    padding: 20px 40px;
     border: 1px solid #dbdbdb;
     flex-direction: row;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 10px 0px;
+    background-color: white;
+    font-size: 12px;
 }
 
 .signup a{
     margin-left: 4px;
     color: #0095f7;
-    font-weight: bold;
 }
 
 .download{
+    margin-top: 15px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .download img{
-    width: 60%;
-    margin: 0 5px;
+    width: 40%;
+    margin: 20px 5px;
+}
+
+/* media queries */
+
+@media (max-width: 880px){
+    .phone{
+        display: none;
+    }
+
+    .login-area{
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 450px){
+    .login{
+        border: none;
+        background-color: #fafafa;
+    }
+
+    .signup{
+        border: none;
+        background-color: #fafafa;
+        margin: 150px 0px;
+    }
+
+    .main-content{
+        padding-top: 10px;
+    }
 }
